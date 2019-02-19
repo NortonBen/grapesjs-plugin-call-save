@@ -1,0 +1,46 @@
+{
+  "name": "grapesjs-plugin-call-save",
+  "version": "0.0.1",
+  "description": "Call save GrapesJS",
+  "main": "dist/grapesjs-plugin-call-save.min.js",
+  "scripts": {
+    "lint": "eslint src",
+    "build": "npm run v:patch && webpack --env.production",
+    "v:patch": "npm version --no-git-tag-version patch",
+    "start": "webpack-dev-server --open --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NortonPerson/grapesjs-plugin-call-save.git"
+  },
+  "keywords": [
+    "grapesjs",
+    "template",
+    "export",
+    "zip"
+  ],
+  "author": "norton",
+  "license": "BSD-3-Clause",
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-object-rest-spread",
+      "transform-runtime"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.5.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.18.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  }
+}
